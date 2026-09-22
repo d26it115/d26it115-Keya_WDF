@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <!-- BRAND -->
+        <div class="brand">
+
+            <img src="../images/logo.png"
+                 alt="StudentHub Logo"
+                 class="logo">
+
+            <div class="brand-text">
+
+                <h1>StudentHub</h1>
+
+                <p>Student Portal</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE HEADER -->
+
+        <div class="header-right">
+
+            <button id="menuBtn" class="menu-btn" type="button" aria-label="Open menu">
+                ☰
+            </button>
+
+            <nav id="mainNav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#register">Register</a>
+                <a href="#login">Login</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#events">Events</a>
+                <a href="#profile">Profile</a>
+                <a href="#contact">Contact</a>
+                <a href="#admin">Admin</a>
+                <a href="#faq">FAQ</a>
+                <a href="#feedback">Feedback</a>
+            </nav>
+
+            <div class="apply-area">
+                <a href="#register" class="apply-button">
+                    Apply Now
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+
+        <section class="home-intro">
+
+            <div id="notification">
+
+                <span>
+                    Registration Open
+                </span>
+
+                <button id="closeBtn"
+                        type="button">
+                </button>
+
+            </div>
+
+            <div class="intro-left">
+
+                <h2 id="welcomeheading">
+                    Welcome to Student Hub
+                </h2>
+
+
+                <button id="changeBtn"
+                        type="button">
+                    Change Heading
+                </button>
+
+
+                <button id="themeBtn"
+                        type="button">
+                    Dark Mode
+                </button>
+
+
+                <button id="OpenModelBtn"
+                        type="button">
+                    Open Announcement
+                </button>
+
+            </div>
+
+            <div class="intro-right">
+
+                <div class="image-slider">
+
+                    <button class="slider-button prev-button"
+                            id="prevButton"
+                            type="button">
+                        &#10094;
+                    </button>
+
+                    <img id="sliderImage"
+                         src="../images/newbanner.jpeg"
+                         alt="StudentHub Campus"
+                         class="header-banner">
+
+                    <button class="slider-button next-button"
+                            id="nextButton"
+                            type="button">
+                        &#10095;
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOME -->
+
+        <section id="home">
+
+            <h2>Welcome</h2>
+
+            <p>
+                Welcome to StudentHub. This website helps students
+                manage their profiles, events and learning activities.
+            </p>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about">
+
+            <h2>About Us</h2>
+
+            <p>
+                StudentHub is a simple portal created for students.
+                It allows students to register, login, manage profiles
+                and participate in events.
+            </p>
+
+            <h2>Mission</h2>
+
+            <p>
+                Our mission is to make student management easy and accessible.
+            </p>
+
+        </section>
+
+
+        <!-- REGISTER -->
+
+        <section id="register">
+
+            <h2>Student Registration</h2>
+
+            <form>
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input type="text"
+                       id="name"
+                       required>
+
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input type="email"
+                       id="email"
+                       required>
+
+
+                <label for="course">
+                    Course
+                </label>
+
+                <input type="text"
+                       id="course">
+
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input type="password"
+                       id="password"
+                       required>
+
+
+                <button type="submit">
+                    Register
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- LOGIN -->
+
+        <section id="login">
+
+            <h2>Login</h2>
+
+            <form>
+
+                <label for="loginEmail">
+                    Email
+                </label>
+
+                <input type="email"
+                       id="loginEmail"
+                       required>
+
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <input type="password"
+                       id="loginPassword"
+                       required>
+
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboard">
+
+            <h2>Student Dashboard</h2>
+
+            <p>
+                Hello! This is your dashboard.
+            </p>
+
+
+            <h3>Your Information</h3>
+
+            <ul>
+
+                <li>
+                    Name: Student Name
+                </li>
+
+                <li>
+                    Course: Computer Engineering
+                </li>
+
+                <li>
+                    Semester: 6
+                </li>
+
+                <li>
+                    Status: Active
+                </li>
+
+            </ul>
+
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li>
+                    View Profile
+                </li>
+
+                <li>
+                    Upcoming Events
+                </li>
+
+                <li>
+                    Give Feedback
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <section id="events">
+
+            <h2>Upcoming Events</h2>
+
+            <table>
+
+                <tr>
+
+                    <th>Event</th>
+
+                    <th>Date</th>
+
+                    <th>Venue</th>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Coding Competition
+                    </td>
+
+                    <td>
+                        15 August 2026
+                    </td>
+
+                    <td>
+                        Computer Lab
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Technical Seminar
+                    </td>
+
+                    <td>
+                        20 August 2026
+                    </td>
+
+                    <td>
+                        Seminar Hall
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Sports Day
+                    </td>
+
+                    <td>
+                        5 September 2026
+                    </td>
+
+                    <td>
+                        College Ground
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- PROFILE -->
+
+        <section id="profile">
+
+            <h2>Student Profile</h2>
+
+            <p>
+                <strong>Name:</strong>
+                Keya
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                keya@gmail.com
+            </p>
+
+            <p>
+                <strong>Course:</strong>
+                Computer Engineering
+            </p>
+
+            <p>
+                <strong>Semester:</strong>
+                6
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact">
+
+            <h2>Contact Us</h2>
+
+            <form>
+
+                <label for="contactName">
+                    Name
+                </label>
+
+                <input type="text"
+                       id="contactName"
+                       required>
+
+
+                <label for="contactEmail">
+                    Email
+                </label>
+
+                <input type="email"
+                       id="contactEmail"
+                       required>
+
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea id="message"
+                          rows="5"></textarea>
+
+
+                <button type="submit">
+                    Send
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section id="admin">
+
+            <h2>Admin Panel</h2>
+
+            <ul>
+
+                <li>
+                    Manage Students
+                </li>
+
+                <li>
+                    Manage Events
+                </li>
+
+                <li>
+                    View Feedback
+                </li>
+
+                <li>
+                    Update Notices
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <section id="faq">
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+
+            <h3>
+                1. How do I register?
+            </h3>
+
+            <p>
+                Open the Register section and fill out the form.
+            </p>
+
+
+            <h3>
+                2. How do I login?
+            </h3>
+
+            <p>
+                Use your email and password in the Login section.
+            </p>
+
+
+            <h3>
+                3. Can I update my profile?
+            </h3>
+
+            <p>
+                Yes, through the Profile section.
+            </p>
+
+        </section>
+
+
+        <section id="feedback">
+
+            <h2>
+                Give Your Feedback
+            </h2>
+
+            <form>
+
+                <label for="feedbackName">
+                    Name
+                </label>
+
+                <input type="text"
+                       id="feedbackName"
+                       required>
+
+
+                <label for="feedbackEmail">
+                    Email
+                </label>
+
+                <input type="email"
+                       id="feedbackEmail"
+                       required>
+
+
+                <label for="feedbackText">
+                    Feedback
+                </label>
+
+                <textarea id="feedbackText"
+                          rows="5"></textarea>
+
+
+                <button type="submit">
+                    Submit
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; 2026 StudentHub
+        </p>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
